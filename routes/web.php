@@ -15,6 +15,9 @@ Route::get('/mahasiswa', function () {
     return view('mahasiswa', compact ('data')); 
 });
 
+Route::resource('/prodi', ProdiController::class);
+Route::resource('/mahasiswa', MahasiswaController::class);
+
 // Route::get('/prodi', function () {
 //     $data = ['nama' => 'ghaida', 'foto' =>'girl.jpg'];
 //     return view('prodi', compact ('data')); 
